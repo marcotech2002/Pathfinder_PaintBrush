@@ -7,8 +7,8 @@
 
 typedef struct Pixel
 {
-	int x;
-	int y;
+    int x;
+    int y;
 
     double red;
     double green;
@@ -26,16 +26,23 @@ typedef struct Steps
 
 } Steps;
 
+
+
+//*****************************************************************************
+// Defina aqui as suas funções gráficas
+//*****************************************************************************
+
 //Desenha um pixel na tela. Seus atributos são definidos no struct passado.
 void putPixel(Pixel p)
 {
-	if(p.x>IMAGE_WIDTH || p.x<0 || p.y>IMAGE_HEIGHT || p.y<0) return;
 
-	int endereco = p.x*4 + p.y*4*IMAGE_WIDTH;
-	FBptr[endereco] = p.red;
-	FBptr[endereco + 1] = p.green;
-	FBptr[endereco + 2] = p.blue;
-	FBptr[endereco + 3] = p.alpha;
+    if(p.x>IMAGE_WIDTH || p.x<0 || p.y>IMAGE_HEIGHT || p.y<0) return;
+
+    int endereco = p.x*4 + p.y*4*IMAGE_WIDTH;
+    FBptr[endereco] = p.red;
+    FBptr[endereco + 1] = p.green;
+    FBptr[endereco + 2] = p.blue;
+    FBptr[endereco + 3] = p.alpha;
 }
 
 void setarDist(Pixel inicial, Pixel final, Steps *dist)
@@ -85,8 +92,8 @@ void drawLine(Pixel inicial, Pixel final)
     Pixel linha = {inicial.x, inicial.y, inicial.red, inicial.green, inicial.blue, inicial.alpha};  //Esse pixel é o que se moverá e pintará a linha
     if(dx == 0)
     {
-        if(yf > yi)
-        {    //linha pra baixo
+        if(yf > yi)     //linha pra baixo
+        {
             while(linha.y != yf)
             {
 
@@ -96,8 +103,8 @@ void drawLine(Pixel inicial, Pixel final)
 
             }
         }
-        else
-        {           //linha pra cima
+        else            //linha pra cima
+        {
             while(linha.y != yf)
             {
 
@@ -111,8 +118,8 @@ void drawLine(Pixel inicial, Pixel final)
     }
     else if(dy == 0)
     {
-        if(xf > xi)
-        {    //linha pra direita
+        if(xf > xi)     //linha pra direita
+        {
             while(linha.x != xf)
             {
 
@@ -122,8 +129,8 @@ void drawLine(Pixel inicial, Pixel final)
 
             }
         }
-        else
-        {           //linha pra esquerda
+        else            //linha pra esquerda
+        {
             while(linha.x != xf)
             {
 
@@ -138,6 +145,7 @@ void drawLine(Pixel inicial, Pixel final)
     {
         if (dx >= dy)
         {
+
             controle = dx / 2;
             putPixel(inicial);
             while (linha.x != xf)
@@ -173,6 +181,8 @@ void drawLine(Pixel inicial, Pixel final)
 
         }
     }
+
+
 }
 
 void drawTriangle(Pixel p1, Pixel p2, Pixel p3)

@@ -1,7 +1,0 @@
-# depslib dependency file v1.0
-1661945906 source:c:\users\marco\source\repos\paintbrush\pathfinder_paintbrush\paintbrushcode\main.c
-	"windows.h"
-	<stdio.h>
-	<stdlib.h>
-	<conio.h>
-
