@@ -2,6 +2,12 @@
 
 Este projeto implementa um PaintBrush básico utilizando OpenGL para manipulação de pixels, linhas e triângulos na tela.
 
+## Ferramentas
+
+![Logo do C++](https://cdn-icons-png.flaticon.com/256/6132/6132222.png)
+
+- Linguagem de programação: C++
+
 ## Funcionalidades
 
 - Desenho de pixels coloridos individualmente.
