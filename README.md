@@ -55,7 +55,14 @@ Esta função é responsável por desenhar os elementos gráficos na tela, chama
 
 ## Como Executar
 
-1. Instale as dependências, caso já não o tenha feito:
+1. Clone este repositório:
+
+    ```
+    git clone https://github.com/seu-usuario/seu-repositorio.git
+    cd repositorio
+    ```
+    
+2. Instale as dependências, caso já não o tenha feito:
   - Instalar um Compilador C++
     - Baixe e instale o MinGW-w64
     - Durante a instalação, selecione a opção "Mingw-w64 base"
@@ -67,10 +74,10 @@ Esta função é responsável por desenhar os elementos gráficos na tela, chama
       - `freeglut.dll` → `C:\Windows\System32\`
       - `freeglut.h` → `C:\mingw-w64\include\GL\`
       - `libfreeglut.a` → `C:\mingw-w64\lib\`
-2. Compile o projeto:
+3. Compile o projeto:
 
     `gcc main.c -o paintbrush -lGL -lGLU -lglut`
 
-3. Rodar o programa:
+4. Rodar o programa:
 
     `./paintbrush`
