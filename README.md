@@ -58,7 +58,7 @@ Esta função é responsável por desenhar os elementos gráficos na tela, chama
 1. Clone este repositório:
 
     ```
-    git clone https://github.com/seu-usuario/seu-repositorio.git
+    git clone https://github.com/seu-usuario/seu-repositorio.git](https://github.com/marcotech2002/Pathfinder_PaintBrush.git
     cd repositorio
     ```
     
