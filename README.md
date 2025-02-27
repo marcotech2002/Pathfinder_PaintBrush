@@ -56,12 +56,6 @@ Esta função é responsável por desenhar os elementos gráficos na tela, chama
 ## Como Executar
 
 1. Clone este repositório:
-
-    ```
-    git clone https://github.com/seu-usuario/seu-repositorio.git](https://github.com/marcotech2002/Pathfinder_PaintBrush.git
-    cd repositorio
-    ```
-    
 2. Instale as dependências, caso já não o tenha feito:
   - Instalar um Compilador C++
     - Baixe e instale o MinGW-w64
